@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navigation bar Start */
+#navbar{
+    /* background: rgba(0, 0, 0, 0.3); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    border-bottom: 1px solid rgba(98, 98, 98, .60);
+}
+
+#navbar .logo{
+    width: 20%;
+    align-self: center;
+}
+
+#navbar .logo a{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+#navbar .menu{
+    width: 80%;
+}
+
+#navbar .menu ul{
+    text-align: right;
+}
+
+#navbar .menu ul li{
+    display: inline-block;
+}
+
+#navbar .menu ul li a{
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+/* Navigation bar End */
+
+/* Banner Part Part */
+#banner{
+    background: url(../images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#banner .banner_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Banner Part End */
