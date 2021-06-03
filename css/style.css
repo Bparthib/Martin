@@ -1,233 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-.container{
-    width: 1140px;
-    margin: 0 auto;
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-/* Navigation bar Start */
-#navbar{
-    /* background: rgba(0, 0, 0, 0.3); */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999999;
-    border-bottom: 1px solid rgba(98, 98, 98, .60);
-}
-
-#navbar .logo{
-    width: 20%;
-    align-self: center;
-}
-
-#navbar .logo a{
-    display: block;
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #fff;
-    
-}
-
-#navbar .menu{
-    width: 80%;
-}
-
-#navbar .menu ul{
-    text-align: right;
-}
-
-#navbar .menu ul li{
-    display: inline-block;
-}
-
-#navbar .menu ul li a{
-    display: inline-block;
-    padding: 20px 15px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-}
-/* Navigation bar End */
-
-/* Banner Part Part */
-#banner{
-    background: url(../images/home.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-}
-
-#banner .banner_content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#banner .banner_content h2{
-    color: #fff;
-    font-size: 55px;
-    font-weight: 300;
-}
-
-#banner .banner_content h1{
-    color: #fff;
-    font-size: 90px;
-    letter-spacing: 2px;
-}
-
-#banner .banner_content p{
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    width: 710px;
-    padding: 20px 0 50px;
-}
-
-#banner .banner_content a{
-    color: #fff;
-    background: #f34236;
-    border-color: #f34236;
-    border-radius: 3px;
-    box-shadow: 0px 8px 15px rgb(0, 0, 0, .1);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 16px 34px;
-    line-height: 25px;
-    text-transform: uppercase;
-}
-/* Banner Part End */
-
-/* About Part Start */
-#about{
-    padding: 100px 0;
-}
-
-#about .about_image{
-    width: 40%;
-}
-
-#about .about_image img{
-    display: block;
-    width: 100%;
-    border: 10px solid #fff;
-    border-radius: .25rem;
-    box-shadow: 0 10px 16px  rgb(58, 78, 95, .2), 0 -5px 16px rgb(58, 78, 95, .05);
-}
-
-#about .about_content{
-    width: 60%;
-    padding: 25px 0 0 60px;
-}
-
-#about .about_content h3{
-    font-weight: 700;
-    font-size: 32px;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-}
-
-#about .about_content h3::after{
-    width: 60px;
-    height: 3px;
-    background: #111111;
-    content: "";
-    position: absolute;
-    left: 0;
-    margin: auto;
-    bottom: -10px;
-}
-
-#about .about_content h3 span{
-    color: #f34236;
-}
-
-#about .about_content h5{
-    font-size: 20px;
-    font-weight: 600;
-    padding: 30px 0 15px;
-}
-
-#about .about_content p{
-    font-size: 15px;
-    color: #828282;
-    font-weight: 400;
-    line-height: 1.6;
-    padding: 0 60px 16px 0;
-}
-
-#about .about_content .about_content_icon i{
-    background: #111;
-    color: #fff;
-    border-radius: 3px;
-    width: 40px;
-    height: 40px;
-    padding-top: 13px;
-    font-size: 15px;
-    text-align: center;
-}
-
-#about .about_content .about_btn a{
-    display: inline-block;
-    color: #fff;
-    background: #f34236;
-    border-color: #f34236;
-    border-radius: 3px;
-    box-shadow: 0px 8px 15px rgb(0, 0, 0, .1);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 12px 34px;
-    line-height: 25px;
-    text-transform: uppercase;
-    margin: 20px 5px 0 0;
-    transition: all linear .5s;
-}
-
-#about .about_content .about_btn a:hover{
-    background: #111;
-    box-shadow: 0px 12px 15px rgba(243, 66, 54, .5);
-}
-/* About Part End */
-
-/* Service Part Start */
-#service{
-    background: #f3f3f3;
-    padding: 100px 0;
-}
-
-#service .service_title{
-    text-align: center;
-}
-
-#service .service_title h2{
+h2 {
     font-weight: 700;
     font-size: 32px;
     margin: 0;
@@ -235,8 +35,8 @@ a{
     display: inline-block;
     vertical-align: top;
 }
-
-#service .service_title h2::after{
+  
+h2::after {
     width: 60px;
     height: 3px;
     background: #111111;
@@ -246,14 +46,276 @@ a{
     bottom: -10px;
     right: 0;
     left: 0;
+  }
+  
+h2 span {
+    color: #f34236;
+  }
+
+/* Navigation bar Start */
+#navbar {
+  /* background: rgba(0, 0, 0, 0.3); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999;
+  border-bottom: 1px solid rgba(98, 98, 98, 0.6);
 }
 
-#service .service_title h2 span{
+#navbar .logo {
+  width: 20%;
+  align-self: center;
+}
+
+#navbar .logo a {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#navbar .menu {
+  width: 80%;
+}
+
+#navbar .menu ul {
+  text-align: right;
+}
+
+#navbar .menu ul li {
+  display: inline-block;
+}
+
+#navbar .menu ul li a {
+  display: inline-block;
+  padding: 20px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+/* Navigation bar End */
+
+/* Banner Part Part */
+#banner {
+  background: url(../images/home.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#banner .banner_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#banner .banner_content h2 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+#banner .banner_content h1 {
+  color: #fff;
+  font-size: 90px;
+  letter-spacing: 2px;
+}
+
+#banner .banner_content p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 710px;
+  padding: 20px 0 50px;
+}
+
+#banner .banner_content a {
+  color: #fff;
+  background: #f34236;
+  border-color: #f34236;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 16px 34px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+/* Banner Part End */
+
+/* About Part Start */
+#about {
+  padding: 100px 0;
+}
+
+#about .about_image {
+  width: 40%;
+}
+
+#about .about_image img {
+  display: block;
+  width: 100%;
+  border: 10px solid #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 16px rgb(58, 78, 95, 0.2),
+    0 -5px 16px rgb(58, 78, 95, 0.05);
+}
+
+#about .about_content {
+  width: 60%;
+  padding: 25px 0 0 60px;
+}
+
+#about .about_content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+#about .about_content h3::after {
+  width: 60px;
+  height: 3px;
+  background: #111111;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin: auto;
+  bottom: -10px;
+}
+
+#about .about_content h3 span {
+  color: #f34236;
+}
+
+#about .about_content h5 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 30px 0 15px;
+}
+
+#about .about_content p {
+  font-size: 15px;
+  color: #828282;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 60px 16px 0;
+}
+
+#about .about_content .about_content_icon i {
+  background: #111;
+  color: #fff;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  padding-top: 13px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#about .about_content .about_btn a {
+  display: inline-block;
+  color: #fff;
+  background: #f34236;
+  border-color: #f34236;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 34px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 20px 5px 0 0;
+  transition: all linear 0.5s;
+}
+
+#about .about_content .about_btn a:hover {
+  background: #111;
+  box-shadow: 0px 12px 15px rgba(243, 66, 54, 0.5);
+}
+/* About Part End */
+
+/* Service Part Start */
+#service {
+  background: #f3f3f3;
+  padding: 100px 0;
+}
+
+#service .service_title {
+  text-align: center;
+}
+
+#service .service_title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#service .service_title h2::after {
+  width: 60px;
+  height: 3px;
+  background: #111111;
+  content: "";
+  position: absolute;
+  margin: auto;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+}
+
+#service .service_title h2 span {
+  color: #f34236;
+}
+
+#service .service_content{
+    padding: 40px 0 0px;
+}
+
+#service .service_content .service_item {
+  width: 30%;
+  background: #fff;
+  border-radius: 5px;
+  border: 5px solid transparent;
+  padding: 40px 0 40px;
+  text-align: center;
+  box-shadow: 0px 3px 10px 0px rgb(38, 59, 94, .1);
+  margin: 15px 15px 15px;
+  transition: all linear .3s;
+}
+
+#service .service_content .service_item:hover{
+    border: 5px solid #f34236;
+    box-shadow: 0px 10px 10px 0px rgb(38, 59, 94, .1);
+    margin: 5px 15px 25px;
+}
+
+#service .service_content .service_item i {
+    font-size: 54px;
     color: #f34236;
 }
 
-#service .service_content .service_item{
-    width: 30%;
-    background: #fff;
+#service .service_content .service_item h6{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 20px 0 15px;
+}
+
+#service .service_content .service_item p{
+    font-size: 15px;
+    color: #828282;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 0 25px 0;
 }
 /* Service Part End */
