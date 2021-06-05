@@ -28,29 +28,29 @@ a {
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 32px;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
-  
+
 h2::after {
-    width: 60px;
-    height: 3px;
-    background: #111111;
-    content: "";
-    position: absolute;
-    margin: auto;
-    bottom: -10px;
-    right: 0;
-    left: 0;
-  }
-  
+  width: 60px;
+  height: 3px;
+  background: #111111;
+  content: "";
+  position: absolute;
+  margin: auto;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+}
+
 h2 span {
-    color: #f34236;
-  }
+  color: #f34236;
+}
 
 /* Navigation bar Start */
 #navbar {
@@ -277,8 +277,8 @@ h2 span {
   color: #f34236;
 }
 
-#service .service_content{
-    padding: 40px 0 0px;
+#service .service_content {
+  padding: 40px 0 0px;
 }
 
 #service .service_content .service_item {
@@ -288,34 +288,244 @@ h2 span {
   border: 5px solid transparent;
   padding: 40px 0 40px;
   text-align: center;
-  box-shadow: 0px 3px 10px 0px rgb(38, 59, 94, .1);
+  box-shadow: 0px 3px 10px 0px rgb(38, 59, 94, 0.1);
   margin: 15px 15px 15px;
-  transition: all linear .3s;
+  transition: all linear 0.3s;
 }
 
-#service .service_content .service_item:hover{
-    border: 5px solid #f34236;
-    box-shadow: 0px 10px 10px 0px rgb(38, 59, 94, .1);
-    margin: 5px 15px 25px;
+#service .service_content .service_item:hover {
+  border: 5px solid #f34236;
+  box-shadow: 0px 10px 10px 0px rgb(38, 59, 94, 0.1);
+  margin: 5px 15px 25px;
 }
 
 #service .service_content .service_item i {
-    font-size: 54px;
-    color: #f34236;
+  font-size: 54px;
+  color: #f34236;
 }
 
-#service .service_content .service_item h6{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.2;
-    padding: 20px 0 15px;
+#service .service_content .service_item h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 20px 0 15px;
 }
 
-#service .service_content .service_item p{
-    font-size: 15px;
-    color: #828282;
-    font-weight: 600;
-    line-height: 1.6;
-    padding: 0 25px 0;
+#service .service_content .service_item p {
+  font-size: 15px;
+  color: #828282;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 0 25px 0;
 }
 /* Service Part End */
+
+/* Resume Part Start */
+#resume {
+  padding: 100px 0;
+}
+
+#resume .resume_title {
+  text-align: center;
+}
+
+#resume .resume_content {
+  padding-top: 60px;
+}
+
+#resume .resume_content .resume_item {
+  width: calc(50% - 30px);
+  box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
+    0 -5px 16px rgba(58, 78, 95, 0.05);
+  padding: 30px 0 30px 30px;
+  margin: 0 15px 0;
+}
+
+#resume .resume_content .resume_item h5 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f34236;
+  text-transform: uppercase;
+}
+
+#resume .resume_content .resume_item h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  padding: 15px 0 5px;
+}
+
+#resume .resume_content .resume_item p i {
+  text-transform: uppercase;
+}
+
+#resume .resume_content .resume_item p {
+  font-size: 15px;
+  color: #828282;
+  font-weight: 600;
+  padding: 5px 107px 5px 0;
+}
+/* Resume Part End */
+
+/* Hire Part Start */
+#hire {
+  text-align: center;
+  padding: 60px 0 60px;
+  background: #f34236;
+}
+
+#hire h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#hire a {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0px 15px 20px rgba(17, 17, 17, 0.4);
+  transition: all linear 0.5s;
+  text-transform: uppercase;
+  color: #f34236;
+  padding: 14px 23px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#hire a:hover {
+  background: #f34236;
+  color: #fff;
+}
+/* Hire Part End */
+
+/* Portfolio Part Start */
+#portfolio {
+  padding: 100px 0;
+}
+
+#portfolio .portfolio_title {
+  text-align: center;
+}
+
+#portfolio .portfolio_content .portfolio_menu ul {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+#portfolio .portfolio_content .portfolio_menu li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 15px;
+  color: #111;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#portfolio .portfolio_content .portfolio_menu li:hover {
+  color: #f34236;
+}
+
+#portfolio .portfolio_content .portfolio_element {
+  width: calc(30% - 15px);
+  margin: 15px;
+  border: 10px solid #fff;
+  box-shadow: 0 10px 16px;
+  box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
+    0 -5px 16px rgba(58, 78, 95, 0.05);
+  position: relative;
+}
+
+#portfolio .portfolio_content .portfolio_element .portfolio_img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+#portfolio .portfolio_content .portfolio_element .portfolio_img::before {
+  width: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(17, 17, 17, 0.4);
+  z-index: -1;
+}
+
+#portfolio .portfolio_content .portfolio_element .portfolio_img img {
+  width: 100%;
+  display: block;
+}
+
+#portfolio .portfolio_content .portfolio_element h5 {
+  background: #f34236;
+  font-size: 16px;
+  padding: 18px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  margin-top: -58px;
+  z-index: 1;
+  visibility: hidden;
+  transition: all linear 0.5s;
+}
+
+#portfolio .portfolio_content .portfolio_element:hover h5 {
+  visibility: visible;
+}
+
+#portfolio .portfolio_content .portfolio_element h5 a {
+  color: #fff;
+}
+/* Portfolio Part End */
+
+/* Co-founder Part Start */
+#co-founder {
+  background: #f3f3f3;
+  padding: 100px 0;
+}
+
+#co-founder .co-founder_content {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
+    0 -5px 16px rgba(58, 78, 95, 0.05);
+  padding: 50px 25px 30px;
+}
+
+#co-founder .co-founder_content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#co-founder .co-founder_content p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #828282;
+  padding: 20px 0;
+}
+
+#co-founder .co-founder_content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+#co-founder .co-founder_content label{
+  font-size: 15px;
+  color: #828282;
+  padding-top: 10px;
+}
+/* Co-founder Part End */
