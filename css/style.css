@@ -146,6 +146,12 @@ h2 span {
   padding: 16px 34px;
   line-height: 25px;
   text-transform: uppercase;
+  transition: linear .5s;
+}
+
+#banner .banner_content a:hover{
+  background: #111;
+  box-shadow: 0px 8px 20px rgba(243, 66, 54, .59);
 }
 /* Banner Part End */
 
@@ -425,6 +431,18 @@ h2 span {
   color: #111;
   cursor: pointer;
   text-transform: uppercase;
+  position: relative;
+}
+
+#portfolio .portfolio_content .portfolio_menu li::after{
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f34236;
+  position: absolute;
+  margin: -7px auto;
+  height: 2px;
 }
 
 #portfolio .portfolio_content .portfolio_menu li:hover {
@@ -447,13 +465,13 @@ h2 span {
   z-index: 1;
 }
 
-#portfolio .portfolio_content .portfolio_element .portfolio_img::before {
+#portfolio .portfolio_content .portfolio_element:hover .portfolio_img::before {
   width: 100%;
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-  background: rgba(17, 17, 17, 0.4);
+  background: rgba(17, 17, 17);
   z-index: -1;
 }
 
