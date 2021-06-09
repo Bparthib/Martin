@@ -711,13 +711,19 @@ h2 span {
   text-transform: uppercase;
 }
 
+#contact .contact_item .contact_form form .btn:hover {
+  background: #111;
+  border-color: #111;
+  box-shadow: 0px 12px 15px rgba(243, 66, 54, 0.5);
+}
+
 #contact .contact_item .contact_info {
   width: calc(40% - 30px);
   background: #fff;
   margin: 0 15px;
   box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
     0 -5px 16px rgba(58, 78, 95, 0.05);
-    padding: 30px 0 0 30px;
+  padding: 30px 0 0 30px;
 }
 
 #contact .contact_item .contact_info .info .info_icon i {
@@ -730,7 +736,7 @@ h2 span {
   color: #fff;
 }
 
-#contact .contact_item .contact_info .info .info_text{
+#contact .contact_item .contact_info .info .info_text {
   padding-left: 15px;
   margin-bottom: 30px;
 }
@@ -748,3 +754,49 @@ h2 span {
 }
 
 /* Contact Part End */
+
+/* Footer Part Start */
+#footer {
+  text-align: center;
+  background: #212121;
+}
+
+#footer .footer_logo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 60px 0;
+}
+
+#footer .footer_logo p {
+  color: #ffffff;
+  padding-bottom: 25px;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 43px;
+}
+
+#footer .footer_logo a i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #111;
+  color: #999;
+  margin: 0 1px;
+}
+
+#footer .footer_logo a i:hover {
+  background: #212121;
+  box-shadow: 0 0 0 1px #111;
+}
+
+#footer .copyright {
+  padding: 20px 0;
+}
+
+#footer .copyright p {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Footer Part End */
