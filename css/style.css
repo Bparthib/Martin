@@ -546,11 +546,11 @@ h2 span {
   padding: 100px 0;
 }
 
-#blog .blog_content{
+#blog .blog_content {
   padding-top: 60px;
 }
 
-#blog .blog_content .blog_item{
+#blog .blog_content .blog_item {
   width: 30%;
   overflow: hidden;
   box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
@@ -558,57 +558,57 @@ h2 span {
   margin: 0 15px;
 }
 
-#blog .blog_content .blog_item .blog a{
+#blog .blog_content .blog_item .blog a {
   cursor: pointer;
 }
 
-#blog .blog_content .blog_item .blog_img{
+#blog .blog_content .blog_item .blog_img {
   overflow: hidden;
 }
 
-#blog .blog_content .blog_item .blog_img img{
+#blog .blog_content .blog_item .blog_img img {
   width: 100%;
-  transition: ease all .85s;
+  transition: ease all 0.85s;
   vertical-align: middle;
 }
 
-#blog .blog_content .blog_item:hover img{
+#blog .blog_content .blog_item:hover img {
   transform: scale(1.1);
 }
 
-#blog .blog_content .blog_item .blog_text{
+#blog .blog_content .blog_item .blog_text {
   padding: 20px;
 }
 
-#blog .blog_content .blog_item .blog_text small{
+#blog .blog_content .blog_item .blog_text small {
   font-size: 12px;
   color: #828282;
   line-height: 15px;
   font-weight: 600;
 }
 
-#blog .blog_content .blog_item .blog_text .second{
+#blog .blog_content .blog_item .blog_text .second {
   border-left: 1px solid #ddd;
   padding-left: 6px;
   margin-left: 6px;
 }
 
-#blog .blog_content .blog_item .blog_text h5{
+#blog .blog_content .blog_item .blog_text h5 {
   padding: 15px 0;
 }
 
-#blog .blog_content .blog_item .blog_text h5 a{
+#blog .blog_content .blog_item .blog_text h5 a {
   color: #111;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-#blog .blog_content .blog_item .blog_text h5 a:hover{
+#blog .blog_content .blog_item .blog_text h5 a:hover {
   color: #f34236;
 }
 
-#blog .blog_content .blog_item .blog_text p{
+#blog .blog_content .blog_item .blog_text p {
   font-size: 15px;
   color: #828282;
   font-weight: 400;
@@ -616,7 +616,7 @@ h2 span {
   padding-bottom: 15px;
 }
 
-#blog .blog_content .blog_item .blog_text .readMore a{
+#blog .blog_content .blog_item .blog_text .readMore a {
   color: #f34236;
   border-bottom: 2px solid #f34236;
   text-transform: uppercase;
@@ -625,3 +625,60 @@ h2 span {
 }
 
 /* Blog Part End */
+
+/* Contact Part Start */
+#contact {
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+
+#contact .contact_item {
+  padding-top: 60px;
+}
+
+#contact .contact_item .contact_form {
+  width: calc(60% - 30px);
+  background: #fff;
+  margin: 0 15px;
+}
+
+#contact .contact_item .contact_form .form_heading{
+  position: relative;
+}
+
+#contact .contact_item .contact_form .form_heading h5 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#contact .contact_item .contact_form .form_heading p {
+  font-size: 15px;
+  color: #828282;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#contact .contact_item .contact_form .form_heading i{
+  position: absolute;
+  font-size: 60px;
+  top: 10px;
+  right: 25px;
+  opacity: 0.1;
+  color: #828282;
+}
+
+#contact .contact_item .contact_form input{
+  width: 40%;
+  margin-right: 15px;
+}
+
+#contact .contact_item .contact_form textarea{
+  width: 80%;
+}
+
+#contact .contact_item .contact_info {
+  width: calc(40% - 30px);
+  background: #fff;
+  margin: 0 15px;
+}
+/* Contact Part End */
