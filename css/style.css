@@ -640,9 +640,12 @@ h2 span {
   width: calc(60% - 30px);
   background: #fff;
   margin: 0 15px;
+  padding: 25px 0 30px 30px;
+  box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
+    0 -5px 16px rgba(58, 78, 95, 0.05);
 }
 
-#contact .contact_item .contact_form .form_heading{
+#contact .contact_item .contact_form .form_heading {
   position: relative;
 }
 
@@ -658,27 +661,90 @@ h2 span {
   line-height: 1.6;
 }
 
-#contact .contact_item .contact_form .form_heading i{
+#contact .contact_item .contact_form .form_heading i {
   position: absolute;
   font-size: 60px;
   top: 10px;
-  right: 25px;
+  right: 35px;
   opacity: 0.1;
   color: #828282;
 }
 
-#contact .contact_item .contact_form input{
-  width: 40%;
-  margin-right: 15px;
+#contact .contact_item .contact_form input,
+#contact .contact_item .contact_form textarea {
+  width: 45%;
+  margin: 30px 25px 0 0;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
 }
 
-#contact .contact_item .contact_form textarea{
-  width: 80%;
+#contact .contact_item .contact_form textarea {
+  width: calc(90% + 29px);
+  height: 150px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px !important;
+}
+
+#contact .contact_item .contact_form form .btn {
+  cursor: pointer;
+  color: #fff;
+  background: #f34236;
+  border-color: #f34236;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 0;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 13px 5px 0 0;
+  transition: all linear 0.5s;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #contact .contact_item .contact_info {
   width: calc(40% - 30px);
   background: #fff;
   margin: 0 15px;
+  box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
+    0 -5px 16px rgba(58, 78, 95, 0.05);
+    padding: 30px 0 0 30px;
 }
+
+#contact .contact_item .contact_info .info .info_icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+}
+
+#contact .contact_item .contact_info .info .info_text{
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+#contact .contact_item .contact_info .info .info_text h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#contact .contact_item .contact_info .info .info_text p {
+  font-size: 15px;
+  color: #828282;
+  font-weight: 600;
+}
+
 /* Contact Part End */
