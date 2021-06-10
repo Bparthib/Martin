@@ -66,6 +66,24 @@ h2 span {
   width: 100%;
   z-index: 9999999;
   border-bottom: 1px solid rgba(98, 98, 98, 0.6);
+  transition: linear 0.5s;
+}
+
+.stickyNavbar {
+  background: #ffffff;
+  border-bottom: none !important;
+  box-shadow: 0 10px 16px rgb(58, 78, 95, 0.2),
+    0 -5px 16px rgb(58, 78, 95, 0.05);
+  animation: stickyNavbar 0.5s;
+}
+
+@keyframes stickyNavbar {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 0;
+  }
 }
 
 #navbar .logo {
@@ -76,9 +94,13 @@ h2 span {
 #navbar .logo a {
   display: block;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+}
+
+.stickyNavbar .logo a {
+  color: #f34236 !important;
 }
 
 #navbar .menu {
@@ -96,9 +118,13 @@ h2 span {
 #navbar .menu ul li a {
   display: inline-block;
   padding: 20px 15px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 700;
   color: #fff;
+}
+
+.stickyNavbar .menu ul li a {
+  color: #111 !important;
 }
 /* Navigation bar End */
 
