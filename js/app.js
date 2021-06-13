@@ -9,10 +9,10 @@ $(function () {
   });
 
   //Co-founder section animation
-  $("#co-founder").slick({
+  $(".partner").slick({
+    autoplay: 2000,
     arrows: false,
     dots: true,
-    centerMode: true,
-    slideToShow: 1
+    dotsClass: "slider_dots"
   });
 });

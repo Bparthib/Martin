@@ -480,25 +480,23 @@ h2 span {
   position: relative;
 }
 
-#portfolio .portfolio_content .portfolio_element .portfolio_img {
+#portfolio .portfolio_content .portfolio_element .portfolio_img img {
+  width: 100%;
+  display: block;
   position: relative;
   width: 100%;
   z-index: 1;
 }
 
-#portfolio .portfolio_content .portfolio_element:hover .portfolio_img::before {
+#portfolio .portfolio_content .portfolio_element .portfolio_img img::before {
   width: 100%;
+  height: 100%;
   position: absolute;
   content: "";
   left: 0;
   top: 0;
   background: rgba(17, 17, 17);
   z-index: -1;
-}
-
-#portfolio .portfolio_content .portfolio_element .portfolio_img img {
-  width: 100%;
-  display: block;
 }
 
 #portfolio .portfolio_content .portfolio_element h5 {
@@ -515,6 +513,21 @@ h2 span {
   z-index: 1;
   visibility: hidden;
   transition: all linear 0.5s;
+}
+
+#portfolio .portfolio_content .portfolio_element .portfolio_info a i{
+  position: relative;
+}
+
+#portfolio .portfolio_content .portfolio_element .portfolio_info a i::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ margin: auto;
+ background: #fff;
 }
 
 #portfolio .portfolio_content .portfolio_element:hover h5 {
@@ -568,6 +581,32 @@ h2 span {
   font-size: 15px;
   color: #828282;
   padding-top: 10px;
+}
+
+#co-founder .slider_dots {
+  text-align: center;
+  line-height: 0;
+}
+
+#co-founder .slider_dots li {
+  display: inline-block;
+  margin: 30px 5px 0px;
+}
+
+#co-founder .slider_dots li button {
+  font-size: 0;
+  border: none;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #f34236;
+  border-radius: 50%;
+  transition: ease all 0.55s;
+}
+
+#co-founder .slider_dots li.slick-active button{
+  background-color: #f34236;
 }
 /* Co-founder Part End */
 
