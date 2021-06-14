@@ -9,7 +9,7 @@ $(function () {
   });
 
   //Co-founder section animation
-  $(".partner").slick({
+  $("#co-founder .container").slick({
     autoplay: 2000,
     arrows: false,
     dots: true,
