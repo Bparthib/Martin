@@ -129,14 +129,37 @@ h2 span {
 
 #navbar .menu ul li {
   display: inline-block;
+  margin-left: 30px;
 }
 
 #navbar .menu ul li a {
   display: inline-block;
-  padding: 20px 15px;
+  padding: 23px 0px;
   font-size: 15px;
   font-weight: 700;
   color: #fff;
+  position: relative;
+}
+
+#navbar .menu ul li a::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transition: ease all 0.35s;
+}
+
+.stickyNavbar .menu ul li a::after {
+  background: #f34236;
+}
+
+#navbar .menu ul li a:hover:after{
+  width: 100%;
+  /* right: 0; */
+  left: 0;
 }
 
 .stickyNavbar .menu ul li a {
@@ -509,13 +532,11 @@ h2 span {
   bottom: 10px;
   left: 10px;
   background: rgba(17, 17, 17, 0.4);
-  visibility: hidden;
   opacity: 0;
   transition: all linear 0.5s;
 }
 
 #portfolio .portfolio_content .portfolio_element .portfolio_info:hover {
-  visibility: visible;
   opacity: 1;
 }
 
@@ -527,8 +548,9 @@ h2 span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  overflow: hidden;
-  transition: all linear 0.5s;
+  /* overflow: hidden; */
+  transition: ease all 0.55s;
+  
 }
 
 #portfolio .portfolio_content .portfolio_element .portfolio_info:hover > a {
@@ -548,11 +570,11 @@ h2 span {
 
 #portfolio .portfolio_content .portfolio_element .portfolio_info > a i::before {
   width: 100%;
-  height: 1px;
+  height: 0.5px;
 }
 
 #portfolio .portfolio_content .portfolio_element .portfolio_info > a i::after {
-  width: 1px;
+  width: 0.5px;
   height: 100%;
 }
 
